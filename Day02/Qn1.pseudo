@@ -1,0 +1,8 @@
+n = length(nums)
+map = NewHashMap()
+for i -> 0..n-1
+    comp = target - nums[i]
+    if comp in map 
+        return map[comp], i
+    map[num] = i
+return -1

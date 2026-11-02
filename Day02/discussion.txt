@@ -79,12 +79,23 @@ class Solution {
 
 
 LC1 : Two Sum
-==============================================
-==============================================
+nums = [2,7,11,15], target = 9 Output=[0,1]
+        0 1  2 3
 
-
-
+map = {2:0, 7:1, 11:2}
+        0    1    2   3
+nums = [2,   7,  11,  15], target = 22 Output=[1,3]
+        =    =
+comp    20   15  11   7         comp-index, num-index=1,3
 ==============================================
+n = length(nums)
+map = NewHashMap()
+for i -> 0..n-1
+    comp = target - nums[i]
+    if comp in map 
+        return map[comp], i
+    map[num] = i
+return -1
 ==============================================
 
 
@@ -94,7 +105,77 @@ LC1 : Two Sum
 LC217 : Contains Duplicate
 
 --- two ptr
+two index(es) = two pointers 
+
+0 1 2 ... n-1
+P1              forward direction ptr 
+P2
+
+0 1 2 ... n-1
+P1          P2 
+->          <-  opposite direction ptr
+
 LC125 : Valid Palindrome
+
+ap pa
+ = =
+am ma 
+rac e car
+  =   =
+mala y alam 
+
+kan n ada -> NP
+
+
+Example 1:
+
+Input: s = "A man, a plan, a canal: Panama"
+Output: true
+Explanation: "amanaplanacanalpanama" is a palindrome.
+
+====================================
+
+
+
+
+
+
+
+
+
+
+
 LC26 : Remove Duplicates from Sorted Array
+
+1 1 2
+i=0 
+j=1 1!=1F
+j=2 1!=2T
+    i=1
+    nums[1]=2
+j=3
+
+return 2
+
+task2 = 1,1,2,3,3,4
+=======================================
+       0 1 2 3 4 5
+nums = 1,1,2,3,3,4
+       1 2 2 3 3 4
+       1 2 3 3 3 4
+       1 2 3 4 3 4
+i=0 
+i j nums[i] nums[j] action 
+0 1 1       1       1!=1F
+  2 1       2       1!=2T->i=1,nums[1]=2   
+1 3 2       3       2!=3T->i=2,nums[2]=3
+2 4 3       3       3!=3F 
+2 5 3       4       3!=4T ->i=3,nums[3]=4
+3 6 stop 
+
+
+
+
+
 LC167 : Two Sum II - Input Array Is Sorted
 
