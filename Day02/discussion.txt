@@ -1,0 +1,100 @@
+Agenda: OA from companies - service | product 
+Interview Coding Questions 
+
+===============================================
+
+Coding Questions Problems will be given.
+-- Conneect the problem to Solution Technique
+
+Solutions Techniques:
+1. Hashing
+2. Two Pointer
+
+--- hashing
+LC136 : Single Number
+
+
+The above problem we will apply the hashing technique 
+to solve in linear runtime complexity.
+
+hashing technique?
+with technique, keys are stored in DS 
+each key binds to hash code.
+hash code helps to find physical location.
+
+hash DS uses only keys : hash set 
+hash DS uses key-value pairs: hash map / hash table 
+
+hash-set        hash-map
+set             dict        py 
+Set             Map         java 
+
+[4 1 2 1 2]
+           =
+
+ Occurance of 4 : 1
+              1 : 2
+              2 : 2  
+
+
+Pseudo Code: 
+==============================================
+n = length(nums)
+map = NewHashMap()
+for each num in nums
+    if num in map
+        map[num] = map[num] + 1
+    else 
+        map[num] = 1
+for num in map
+    if map[num] == 1
+        return num 
+return -1
+==============================================
+
+
+Java Code:
+==============================================
+class Solution {
+    public int singleNumber(int[] nums) {
+        int n = nums.length;
+        Map<Integer, Integer> map = new HashMap<>(); 
+        for(int i = 0; i < n; i++) {
+            if(map.containsKey(nums[i]))
+                map.put(nums[i], map.get(nums[i]) + 1);
+            else
+                map.put(nums[i], 1);
+        }
+        for(Integer num : map.keySet()) {
+            if(map.get(num) == 1)
+                return num;
+        }
+        return -1;
+    }
+}
+==============================================
+
+
+
+
+
+LC1 : Two Sum
+==============================================
+==============================================
+
+
+
+==============================================
+==============================================
+
+
+
+
+
+LC217 : Contains Duplicate
+
+--- two ptr
+LC125 : Valid Palindrome
+LC26 : Remove Duplicates from Sorted Array
+LC167 : Two Sum II - Input Array Is Sorted
+

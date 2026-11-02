@@ -1,0 +1,11 @@
+n = length(nums)
+map = NewHashMap()
+for each num in nums
+    if num in map
+        map[num] = map[num] + 1
+    else 
+        map[num] = 1
+for num in map
+    if map[num] == 1
+        return num 
+return -1
