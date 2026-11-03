@@ -11,3 +11,5 @@ left    |    right     |  nums[left]   | nums[right]   |   sum
 0           1               2                7               9
 now left=0, right=1 but its 1-indexed array of integers numbers
 so in output = 0+1,1+1 = [1,2]
+Time Complexity = O(n)
+Space Complexity = O(1)
