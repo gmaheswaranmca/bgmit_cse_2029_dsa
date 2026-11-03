@@ -1,0 +1,7 @@
+LC136 : Single Number
+LC1 : Two Sum
+LC217 : Contains Duplicate
+
+LC125 : Valid Palindrome
+LC26 : Remove Duplicates from Sorted Array
+LC167 : Two Sum II - Input Array Is Sorted       !!!!   Assignment of Day2
