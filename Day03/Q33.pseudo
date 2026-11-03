@@ -1,0 +1,18 @@
+left = 0
+right = last index
+While left <= right
+    mid = (left + right) / 2
+    If nums[mid] == target
+        Return mid
+    If nums[left] <= nums[mid]
+        If nums[left] <= target and target < nums[mid]
+            right = mid - 1
+        Else
+            left = mid + 1
+    Else
+        If nums[right] >= target and target > nums[mid]
+            left = mid + 1
+        Else
+            right = mid - 1
+Return -1
+
