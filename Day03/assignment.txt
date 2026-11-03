@@ -1,0 +1,8 @@
+LC 1248 [Medium] Count Number of Nice Subarrays
+LC 153 [Medium] Find Minimum in Rotated Sorted Array
+LC 435 [Medium] Non-overlapping Intervals
+LC 992 [Hard] Subarrays with K Different Integers
+LC 1482 [Medium] Minimum Number of Days to Make m Bouquets
+LC 347 [Medium] Top K Frequent Elements
+
+Any 3 Qns. 
