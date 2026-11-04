@@ -76,3 +76,65 @@ Prompt along with code:
 
 560. Subarray Sum Equals K
 nums = [0, 0, 0] k=0
+
+Example 1
+[1 1 1]     k=2
+
+map = {0:1, 1:1}
+
+pSum = 0
+count = 0
+
+index num pSum target   action   
+0     1   1    1-2=-1   -1 inMap?F, 1 inMap?F
+                         map[1]=1
+                         map = {0:1, 1:1}
+1     1   1+1=2 2-2=0   0 inMap?T
+                        count = 0 + 1 = 1
+                        2 inMap?F 
+                        map[2]=1
+                        map = {0:1, 1:1, 2:1}
+2     1   2+1=3 3-2=1   1 inMap?T 
+                        count = 1 + 1 = 2
+                        3 inMap?F 
+                        map[3]=1
+                         map = {0:1, 1:1, 2:1,3:1}
+stop
+
+Output = 2
+
+Example 2
+map={0:1,2:1,3:1}
+
+nums = 1 2 3 | k = 3
+pSum = 0
+count = 0 -> 1 -> 1 + map[3] = 1 + 1= 2
+map = {0:1, 1:1, 3:1, 3:1}
+nums 1 		2 		3
+pSum 1		1+2=3	6
+k	 3		3		3
+tar  -2  	0		3
+stop 
+
+Example 3
+
+
+
+
+
+
+==============================================
+k = prefixSum - previousPrefixSum
+2 = 1 - -1
+2 = 2 - 0
+2 = 3 - 1
+
+previousPrefixSum = prefixSum - k
+
+Example sum 0 0 0 | k = 0
+map = 0:4
+count = 0 -> 0+1 -> 1+2 = 3->3+3 = 6
+nums        0 0 0 stop
+pSum        0 0 0 
+target      0 0 0
+==============================================
