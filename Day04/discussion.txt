@@ -202,3 +202,19 @@ stack="(("
 
 ")"
 stack=""
+
+=================================
+
+Q using Stk 
+============================
+Stk : LIFO
+Que : FIFO
+
+With Two Stacks 
+	add at inStk
+	delete
+		if outStk is empty 
+			copy by stk ops from inStk to outStk 
+	    delete at outStk 
+
+=================================
