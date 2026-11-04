@@ -1,0 +1,8 @@
+Stack	            20	Valid Parentheses
+Queue	            232	Implement Queue using Stacks
+
+Linked List	        206	Reverse Linked List
+Fast & Slow Pointer	141	Linked List Cycle
+
+Tree BFS	        102	Binary Tree Level Order Traversal
+BST	                98	Validate Binary Search Tree

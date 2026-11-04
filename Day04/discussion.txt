@@ -138,3 +138,67 @@ nums        0 0 0 stop
 pSum        0 0 0 
 target      0 0 0
 ==============================================
+
+
+
+Binary Search on Answer	875	Koko Eating Bananas
+Prefix Sum	560	Subarray Sum Equals K
+Heap	215	Kth Largest Element in an Array
+
+            Time        Space 
+Qn 875      O(N log M)  O(1)
+Qn 560      O(N)        O(N)
+Qn 215      O(N log K)  O(N)
+
+================================================
+
+Stack	            20	Valid Parentheses
+Queue	            232	Implement Queue using Stacks
+
+Linked List	        206	Reverse Linked List
+Fast & Slow Pointer	141	Linked List Cycle
+
+Tree BFS	        102	Binary Tree Level Order Traversal
+BST	                98	Validate Binary Search Tree
+
+================================================
+
+stack: LIFO 
+
+
+20. Valid Parentheses
+( )
+[ ]
+{ }
+valid 
+1 string = "()"
+2 string = "()[]{}"
+3 string = "([]{([])()})"
+
+not valid 
+1 string = "("
+2 string = ")"
+3 string = "([)]"
+4 string = "([]{}([]{}]}"
+
+
+
+{[()]}	valid 
+
+OpBracket stack.push
+ClBracket check it with stack top
+	-> if matched pop it 
+	-> else invalid 
+
+check stack is empty -> valid 
+
+stack=""
+ 
+
+([]{}([]{}]}	Invalid
+          ^
+stack="(("
+--->
+
+")"
+stack=""
