@@ -1,0 +1,29 @@
+FUNCTION subarraySum(nums, k)
+
+    CREATE an empty map prefixMap
+    SET prefixMap[0] = 1
+
+    SET prefixSum = 0
+    SET count = 0
+
+    FOR EACH num IN nums
+
+        ADD num TO prefixSum
+
+        SET target = prefixSum - k
+
+        IF target EXISTS IN prefixMap THEN
+            ADD prefixMap[target] TO count
+        END IF
+
+        IF prefixSum EXISTS IN prefixMap THEN
+            INCREMENT prefixMap[prefixSum] BY 1
+        ELSE
+            SET prefixMap[prefixSum] = 1
+        END IF
+
+    END FOR
+
+    RETURN count
+
+END FUNCTION

@@ -24,3 +24,55 @@ left=4,right=5,mid=4
 left=4,right=4,mid=4
 Stop
 
+class Solution {
+    public int minEatingSpeed(int[] piles, int h) {
+
+        int left = 1;
+        int right = 0;
+
+        // Find maximum pile (maximum possible eating speed)
+        for (int pile : piles) {
+            right = Math.max(right, pile);
+        }
+
+        // Binary Search to find minimum valid eating speed
+        while (left < right) {
+
+            // Find middle eating speed
+            int mid = left + (right - left) / 2;
+
+            // Calculate total hours required at speed mid
+            long hours = 0;
+
+            for (int pile : piles) {
+                // Ceiling division: hours needed for each pile
+                hours += (pile + mid - 1) / mid;
+            }
+
+            // If Koko can finish within h hours,
+            // try a smaller eating speed
+            if (hours <= h) {
+                right = mid;
+            }
+            // Otherwise, increase the eating speed
+            else {
+                left = mid + 1;
+            }
+        }
+
+        // Minimum valid eating speed
+        return left;
+    }
+}
+
+Copy the code to Gen AP -> Gemini, Chat GPT, Claude
+Prompt along with code:
+/explain
+/explain only code (short)
+/dry run 
+
+
+==
+
+560. Subarray Sum Equals K
+nums = [0, 0, 0] k=0
