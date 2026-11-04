@@ -1,0 +1,26 @@
+875. Koko Eating Bananas
+Input: piles = [3,6,7,11], h = 8
+    
+left=1,right=11,mid=6
+mid=k=speed=6
+hours = 
+        3,6, 7, 11
+        5 5  5  5  + 5
+        8 11 12 16 / 6
+        1 1  2  2 = 6   hours 
+left=1,right=6,mid=3
+        3,6, 7, 11
+        5 8  9  13    +2
+        1 2  3  4 = 10   / 3
+
+left=4,right=6,mid=5
+        3,6, 7, 11
+        7 10 11 15 +4
+        1 2  2  3 = 8   /5
+left=4,right=5,mid=4
+        3,6, 7, 11
+        6 9  10 14 +3
+        1 2  2  3 = 8   /4
+left=4,right=4,mid=4
+Stop
+
