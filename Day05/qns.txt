@@ -1,0 +1,9 @@
+Tree BFS	        102	Binary Tree Level Order Traversal
+BST	                98	Validate Binary Search Tree
+
+Graph DFS/BFS	200	Number of Islands
+Topological Sort	207	Course Schedule
+Shortest Path	743	Network Delay Time (conceptual overview)
+Dynamic Programming	322	Coin Change
+Dynamic Programming	300	Longest Increasing Subsequence
+Dynamic Programming	1143	Longest Common Subsequence
