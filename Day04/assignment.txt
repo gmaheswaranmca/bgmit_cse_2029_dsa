@@ -1,0 +1,7 @@
+155 [Medium] Min Stack
+225 [Easy] Implement Stack using Queues
+622 [Medium] Design Circular Queue
+142. [Medium] Linked List Cycle II
+2130 [Medium] Maximum Twin Sum of a Linked List 
+328  [Medium] Odd Even Linked List
+138  [Medium] Copy List with Random Pointer
