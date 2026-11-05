@@ -1,0 +1,16 @@
+Build graph
+Compute indegree
+Insert all indegree 0 nodes into queue
+count = 0
+
+While queue is not empty
+    Remove course
+    count++
+    Reduce indegree of neighbors
+    If neighbor indegree becomes 0
+        Insert into queue
+
+If count == total courses
+    Return true
+Else
+    Return false

@@ -1,0 +1,10 @@
+Function isValidBST(root):
+    Return Validate(root, -INFINITY, +INFINITY)
+
+Function Validate(node, minimum, maximum):
+    If node is NULL:
+        Return true
+    If node.value <= minimum OR node.value >= maximum:
+        Return false
+    Return Validate(node.left, minimum, node.value) AND 
+           Validate(node.right, node.value, maximum)

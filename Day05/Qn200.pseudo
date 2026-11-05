@@ -1,0 +1,22 @@
+function numIslands(grid):    
+    if grid is empty or grid[0] is empty:
+        return 0        
+    count = 0
+    rows = length of grid
+    cols = length of grid[0]    
+    for r from 0 to rows - 1:
+        for c from 0 to cols - 1:         
+            if grid[r][c] == '1':
+                count += 1
+                dfs(grid, r, c)                
+    return count
+function dfs(grid, r, c):
+    rows = length of grid
+    cols = length of grid[0]
+    if r < 0 or r >= rows or c < 0 or c >= cols or grid[r][c] == '0':
+        return
+    grid[r][c] = '0'
+    dfs(grid, r - 1, c)  // Go Up
+    dfs(grid, r + 1, c)  // Go Down
+    dfs(grid, r, c - 1)  // Go Left
+    dfs(grid, r, c + 1)  // Go Right
